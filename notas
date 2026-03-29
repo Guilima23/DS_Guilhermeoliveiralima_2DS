@@ -1,0 +1,39 @@
+package media_notas;
+import java.util.Scanner;
+/** import java.utilpackage media_notas;
+.Scanner;
+ *
+ * @author Guilima
+ */
+public class Media_notas {
+
+    public static void main(String[] args) {
+         Scanner leitor = new Scanner (System.in); 
+        
+        System.out.println ("Informe o seu nome: ");
+         String nome = leitor.nextLine();
+         
+        System.out.println("informe sua escola");
+         String suaesc = leitor.nextLine();
+         
+        double media = 0;
+        
+          for(int i = 0; i<6; i++){
+          System.out.println("Informe suas notas:");
+           
+           while (true){
+               
+               double nota1 = leitor.nextInt();
+           if (nota1 <= 10 && nota1 >= 0){
+               media += nota1;
+               break;
+          }
+           }
+
+          }
+          double media_final = media/6; 
+          
+       
+           System.out.println("Sua média é:" + media_final );  }
+}
+
