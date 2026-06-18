@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		System.out.println("Escreva o numero A");
+		double a = leitor.nextDouble();
+		System.out.println("Escreva o numero B");
+		double b = leitor.nextDouble();
+
+		System.out.println("Escolha uma das operações: 1-Adição  2-Subtração  3-Multiplicação  4- Divisão");
+		int op = leitor.nextInt();
+
+		if (op ==1) {
+			double soma = a + b;
+			System.out.println("O resultado é" + soma);
+		}
+		if (op ==2) {
+			double sub = a - b;
+			System.out.println("O resultado é" + sub);
+		}
+		if (op ==3) {
+			double mult = a b;
+			System.out.println("O resultado é" + mult);
+		}
+		if (op ==4) {
+			double div = a/b;
+			System.out.println("O resultado é" + div);
+		}
+	}
+}

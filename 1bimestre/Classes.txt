@@ -1,0 +1,27 @@
+package classes;
+
+/**
+ *
+ * @author Guilima
+ */
+public class Classes {
+
+
+    public static void main(String[] args) {
+
+ Pessoa gabriel = new Pessoa();
+
+        gabriel.alteranome("Gabriel");
+        System.out.println(gabriel.recuperanome());
+
+        gabriel.alteraidade(16);
+        System.out.println(gabriel.recuperaidade());
+
+        gabriel.alteracpf("333.774.089-91");
+        System.out.println(gabriel.recuperacpf());
+
+        gabriel.alteraestado(true);
+        System.out.println(gabriel.recuperaestado());
+                    }
+}
+
